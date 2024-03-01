@@ -136,6 +136,7 @@ body {
   font-size: 14px;
   font-family: "Inter", "sans-serif";
   align-items: center;
+  margin-bottom: 40px;
 }
 .rihgticon {
   display: flex;
@@ -148,6 +149,7 @@ body {
 
 /* card style */
 .card {
+  position: relative;
   display: flex;
   gap: 30px;
   background: #ffffff;
@@ -415,6 +417,35 @@ body {
   padding: 10px 10px;
 }
 
+/* Bages style */
+.Srnumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px !important;
+  height: 30px;
+  border: 1px solid #e1e4e6;
+  color: #626e79;
+  border-radius: 50%;
+  position: absolute;
+  font-family: "Inter", "sans-serif";
+  left: -10px;
+  top: 30px;
+}
+.bage {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background: #ff7724;
+  border-radius: 0 8px 8px 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Inter", "sans-serif";
+  padding: 7px 10px;
+  gap: 5px;
+  top: -10px;
+}
+
 /* For screens larger than 1024px */
 @media screen and (max-width: 1024px) {
   .herocontainer {
@@ -458,20 +489,19 @@ body {
   .icon-placeholder {
     gap: 20px;
   }
-  .Main-Header{
+  .Main-Header {
     justify-content: space-around;
   }
 }
 @media screen and (min-width: 750px) {
-  .Main-Header{
+  .Main-Header {
     height: 50px;
   }
 }
 /* For screens smaller than 650px */
 @media screen and (max-width: 670px) {
-  .Main-Header{
+  .Main-Header {
     flex-direction: column;
-    
   }
   .view-button {
     width: 100px;
@@ -485,23 +515,23 @@ body {
   .signtext {
     width: 90%;
   }
-  .Footer{
+  .Footer {
     flex-direction: column;
   }
-  .F{
+  .F {
     margin: 20px;
   }
-  .F-3>p{
-   margin: 0;
+  .F-3 > p {
+    margin: 0;
   }
-  .tools{
+  .tools {
     flex-wrap: wrap;
   }
-  .tool{
+  .tool {
     width: 22%;
     text-wrap: nowrap;
   }
-  .emtytool{
+  .emtytool {
     display: none;
   }
 }

@@ -4,12 +4,19 @@ import HalfRating from "./Rating";
 import { IoChevronDownSharp } from "react-icons/io5";
 import { IoChevronUpSharp } from "react-icons/io5";
 import { AiOutlineCheck } from "react-icons/ai";
+import { IoDiamondOutline } from "react-icons/io5";
+import { GoTrophy } from "react-icons/go";
 import VarticalCard from "./VarticalCard";
 function CardInfomation() {
   const [upDown, setUpDown] = useState(true);
   return (
     <>
       <div className="card">
+        <div className="Srnumber">1</div>
+        <div className="bage">
+            <GoTrophy/>
+            <div>Best Choice</div>
+        </div>
         <div className="computer">
           <img src={img} alt="img" />
           <p>Builder 1</p>
@@ -58,6 +65,11 @@ function CardInfomation() {
         </div>
       </div>
       <div className="card">
+        <div className="Srnumber">2</div>
+        <div className="bage">
+            <IoDiamondOutline/>
+            <div>Best Value</div>
+        </div>
         <div className="computer">
           <img src={img} alt="img" />
           <p>Builder</p>
@@ -106,6 +118,7 @@ function CardInfomation() {
         </div>
       </div>
       <div className="card">
+        <div className="Srnumber">3</div>
         <div className="computer">
           <img src={img} alt="img" />
           <p>Builder 1</p>
@@ -154,6 +167,7 @@ function CardInfomation() {
         </div>
       </div>
       <div className="card">
+        <div className="Srnumber">4</div>
         <div className="computer">
           <img src={img} alt="img" />
           <p>CDK</p>
@@ -183,18 +197,24 @@ function CardInfomation() {
           <div>
             <p className=" description">Why we love it</p>
             <div className="welovesection">
-                <div className="tool-rating">
-                <div className="lineCheck"><AiOutlineCheck/></div>
+              <div className="tool-rating">
+                <div className="lineCheck">
+                  <AiOutlineCheck />
+                </div>
                 <div className="ratingtext">Documentation</div>
+              </div>
+              <div className="tool-rating">
+                <div className="lineCheck">
+                  <AiOutlineCheck />
                 </div>
-                <div className="tool-rating">
-                <div className="lineCheck"><AiOutlineCheck/></div>
                 <div className="ratingtext">Easy Use</div>
+              </div>
+              <div className="tool-rating">
+                <div className="lineCheck">
+                  <AiOutlineCheck />
                 </div>
-                <div className="tool-rating">
-                <div className="lineCheck"><AiOutlineCheck/></div>
                 <div className="ratingtext">Out of box</div>
-                </div>
+              </div>
             </div>
           </div>
           <div className="showmore">
@@ -226,16 +246,18 @@ function CardInfomation() {
       </div>
 
       <div className="card-div">
-        <VarticalCard/>
-        <VarticalCard/>
-        <VarticalCard/>
+        <VarticalCard />
+        <VarticalCard />
+        <VarticalCard />
       </div>
 
       <div className="sing-container">
         <div className="signtext">Sign up and get exclusive special deals</div>
         <div className="sign-div">
-            <div className="inputdiv"><input type="text" /></div>
-            <div className="sign-button">Sign Up</div>
+          <div className="inputdiv">
+            <input type="text" />
+          </div>
+          <div className="sign-button">Sign Up</div>
         </div>
       </div>
     </>
